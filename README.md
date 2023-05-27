@@ -54,7 +54,7 @@ amazonCaseTest ->Yazılan senaryoların runlandığı dosyadır.
 * Phlips tıklanır.
 * İlk ürüne tıklanır.
 * Sepete eklenir.
-* Tekrar Ev ve Yaşam'a tıklanır.
+* Tekrar Ev ve Yaşama tıklanır.
 * Karaca Home tıklanır.
 * İlk ürüne tıklanır.
 * Sepete eklenir.
