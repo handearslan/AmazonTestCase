@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.0 on win32)" generated="20230528 01:41:49.317" rpa="false" schemaversion="3">
+<suite id="s1" name="Techcareertest" source="C:\Users\HANDE ARSLAN\PycharmProjects\techcareertest">
+<suite id="s1-s1" name="Resources" source="C:\Users\HANDE ARSLAN\PycharmProjects\techcareertest\resources">
+<suite id="s1-s1-s1" name="Test" source="C:\Users\HANDE ARSLAN\PycharmProjects\techcareertest\resources\test">
+<suite id="s1-s1-s1-s1" name="amazonCaseTest" source="C:\Users\HANDE ARSLAN\PycharmProjects\techcareertest\resources\test\amazonCaseTest.robot">
+<test id="s1-s1-s1-s1-t1" name="Check Login" line="16">
+<kw name="Begin Web Test" library="utilsApp" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230528 01:41:49.925" level="INFO">Opening browser 'CHROME' to base url 'about:blank'.</msg>
+<msg timestamp="20230528 01:41:49.925" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230528 01:41:49.925" endtime="20230528 01:41:51.427"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230528 01:41:51.427" endtime="20230528 01:41:51.544"/>
+</kw>
+<status status="PASS" starttime="20230528 01:41:49.925" endtime="20230528 01:41:51.544"/>
+</kw>
+<kw name="Check Login" library="amazonCaseApp">
+<kw name="Go to Home Page" library="amazonCase">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230528 01:41:51.544" level="INFO">Opening url 'https://www.amazon.com.tr/'</msg>
+<status status="PASS" starttime="20230528 01:41:51.544" endtime="20230528 01:41:58.922"/>
+</kw>
+<kw name="click" library="utils">
+<arg>${accept}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230528 01:41:58.924" endtime="20230528 01:41:58.941"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 01:41:58.942" level="INFO">Clicking element 'id=sp-cc-accept'.</msg>
+<status status="PASS" starttime="20230528 01:41:58.941" endtime="20230528 01:41:59.026"/>
+</kw>
+<status status="PASS" starttime="20230528 01:41:58.923" endtime="20230528 01:41:59.026"/>
+</kw>
+<status status="PASS" starttime="20230528 01:41:51.544" endtime="20230528 01:41:59.026"/>
+</kw>
+<kw name="Go to Login Page" library="amazonCase">
+<kw name="hover" library="utils">
+<arg>id=nav-link-accountList</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230528 01:41:59.027" endtime="20230528 01:41:59.044"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20230528 01:41:59.045" level="INFO">Simulating Mouse Over on element 'id=nav-link-accountList'.</msg>
+<status status="PASS" starttime="20230528 01:41:59.044" endtime="20230528 01:41:59.338"/>
+</kw>
+<status status="PASS" starttime="20230528 01:41:59.027" endtime="20230528 01:41:59.338"/>
+</kw>
+<kw name="click" library="utils">
+<arg>xpath=//div[@id='nav-flyout-ya-signin']//a[@data-nav-role='signin']</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230528 01:41:59.339" endtime="20230528 01:41:59.363"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 01:41:59.364" level="INFO">Clicking element 'xpath=//div[@id='nav-flyout-ya-signin']//a[@data-nav-role='signin']'.</msg>
+<status status="PASS" starttime="20230528 01:41:59.363" endtime="20230528 01:42:01.806"/>
+</kw>
+<status status="PASS" starttime="20230528 01:41:59.338" endtime="20230528 01:42:01.806"/>
+</kw>
+<status status="PASS" starttime="20230528 01:41:59.026" endtime="20230528 01:42:01.806"/>
+</kw>
+<kw name="Enter Email" library="amazonCase">
+<kw name="click" library="utils">
+<arg>${email}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230528 01:42:01.806" endtime="20230528 01:42:01.825"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 01:42:01.826" level="INFO">Clicking element 'css=#ap_email'.</msg>
+<status status="PASS" starttime="20230528 01:42:01.825" endtime="20230528 01:42:01.887"/>
+</kw>
+<status status="PASS" starttime="20230528 01:42:01.806" endtime="20230528 01:42:01.888"/>
+</kw>
+<kw name="input" library="utils">
+<arg>${email}</arg>
+<arg>testtesst011@gmail.com</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230528 01:42:01.888" endtime="20230528 01:42:01.909"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230528 01:42:01.909" endtime="20230528 01:42:01.943"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 01:42:01.943" level="INFO">Clicking element 'css=#ap_email'.</msg>
+<status status="PASS" starttime="20230528 01:42:01.943" endtime="20230528 01:42:01.994"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<arg>${TEXT}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230528 01:42:01.995" level="INFO">Typing text 'testtesst011@gmail.com' into text field 'css=#ap_email'.</msg>
+<status status="PASS" starttime="20230528 01:42:01.994" endtime="20230528 01:42:02.116"/>
+</kw>
+<status status="PASS" starttime="20230528 01:42:01.888" endtime="20230528 01:42:02.116"/>
+</kw>
+<status status="PASS" starttime="20230528 01:42:01.806" endtime="20230528 01:42:02.116"/>
+</kw>
+<kw name="Click Continue Button" library="amazonCase">
+<kw name="click" library="utils">
+<arg>css=#continue</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230528 01:42:02.117" endtime="20230528 01:42:02.132"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 01:42:02.133" level="INFO">Clicking element 'css=#continue'.</msg>
+<status status="PASS" starttime="20230528 01:42:02.132" endtime="20230528 01:42:04.371"/>
+</kw>
+<status status="PASS" starttime="20230528 01:42:02.117" endtime="20230528 01:42:04.371"/>
+</kw>
+<status status="PASS" starttime="20230528 01:42:02.116" endtime="20230528 01:42:04.371"/>
+</kw>
+<kw name="Enter Password" library="amazonCase">
+<kw name="click" library="utils">
+<arg>${password}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230528 01:42:04.373" endtime="20230528 01:42:04.385"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 01:42:04.386" level="INFO">Clicking element 'css=#ap_password'.</msg>
+<status status="PASS" starttime="20230528 01:42:04.386" endtime="20230528 01:42:04.436"/>
+</kw>
+<status status="PASS" starttime="20230528 01:42:04.372" endtime="20230528 01:42:04.436"/>
+</kw>
+<kw name="input" library="utils">
+<arg>${password}</arg>
+<arg>test1234</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230528 01:42:04.437" endtime="20230528 01:42:04.446"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230528 01:42:04.446" endtime="20230528 01:42:04.480"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 01:42:04.480" level="INFO">Clicking element 'css=#ap_password'.</msg>
+<status status="PASS" starttime="20230528 01:42:04.480" endtime="20230528 01:42:04.523"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<arg>${TEXT}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230528 01:42:04.524" level="INFO">Typing text 'test1234' into text field 'css=#ap_password'.</msg>
+<status status="PASS" starttime="20230528 01:42:04.524" endtime="20230528 01:42:04.596"/>
+</kw>
+<status status="PASS" starttime="20230528 01:42:04.436" endtime="20230528 01:42:04.597"/>
+</kw>
+<status status="PASS" starttime="20230528 01:42:04.372" endtime="20230528 01:42:04.597"/>
+</kw>
+<kw name="Click Login Button" library="amazonCase">
+<kw name="click" library="utils">
+<arg>id=signInSubmit</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230528 01:42:04.598" endtime="20230528 01:42:04.610"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 01:42:04.611" level="INFO">Clicking element 'id=signInSubmit'.</msg>
+<status status="PASS" starttime="20230528 01:42:04.611" endtime="20230528 01:42:04.743"/>
+</kw>
+<status status="PASS" starttime="20230528 01:42:04.598" endtime="20230528 01:42:04.744"/>
+</kw>
+<status status="PASS" starttime="20230528 01:42:04.597" endtime="20230528 01:42:04.744"/>
+</kw>
+<status status="PASS" starttime="20230528 01:41:51.544" endtime="20230528 01:42:04.744"/>
+</kw>
+<kw name="Check Add to Cart" library="amazonCaseApp">
+<kw name="Add First Product to Cart" library="amazonCase">
+<kw name="click" library="utils">
+<arg>${clickCategory}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230528 01:42:04.747" endtime="20230528 01:42:11.274"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 01:42:11.275" level="INFO">Clicking element 'xpath=//a[@data-csa-c-slot-id='nav_cs_2']'.</msg>
+<status status="PASS" starttime="20230528 01:42:11.274" endtime="20230528 01:42:16.575"/>
+</kw>
+<status status="PASS" starttime="20230528 01:42:04.746" endtime="20230528 01:42:16.575"/>
+</kw>
+<kw name="click" library="utils">
+<arg>id=sobe_d_b_2_1</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230528 01:42:16.576" endtime="20230528 01:42:16.594"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 01:42:16.595" level="INFO">Clicking element 'id=sobe_d_b_2_1'.</msg>
+<status status="PASS" starttime="20230528 01:42:16.595" endtime="20230528 01:42:19.828"/>
+</kw>
+<status status="PASS" starttime="20230528 01:42:16.575" endtime="20230528 01:42:19.828"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230528 01:42:21.839" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230528 01:42:19.828" endtime="20230528 01:42:21.839"/>
+</kw>
+<kw name="click" library="utils">
+<arg>${firstProduct}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230528 01:42:21.840" endtime="20230528 01:42:21.859"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 01:42:21.860" level="INFO">Clicking element 'xpath=//div[@cel_widget_id='MAIN-SEARCH_RESULTS-1']'.</msg>
+<status status="PASS" starttime="20230528 01:42:21.859" endtime="20230528 01:42:27.280"/>
+</kw>
+<status status="PASS" starttime="20230528 01:42:21.839" endtime="20230528 01:42:27.280"/>
+</kw>
+<kw name="click" library="utils">
+<arg>${addCart}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230528 01:42:27.281" endtime="20230528 01:42:27.296"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 01:42:27.296" level="INFO">Clicking element 'id=add-to-cart-button'.</msg>
+<status status="PASS" starttime="20230528 01:42:27.296" endtime="20230528 01:42:30.482"/>
+</kw>
+<status status="PASS" starttime="20230528 01:42:27.280" endtime="20230528 01:42:30.482"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Sepete Eklendi</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230528 01:42:30.482" endtime="20230528 01:42:30.565"/>
+</kw>
+<status status="PASS" starttime="20230528 01:42:04.745" endtime="20230528 01:42:30.565"/>
+</kw>
+<kw name="Add second product to cart" library="amazonCase">
+<kw name="click" library="utils">
+<arg>${clickCategory}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230528 01:42:30.566" endtime="20230528 01:42:30.604"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 01:42:30.605" level="INFO">Clicking element 'xpath=//a[@data-csa-c-slot-id='nav_cs_2']'.</msg>
+<status status="PASS" starttime="20230528 01:42:30.604" endtime="20230528 01:42:33.869"/>
+</kw>
+<status status="PASS" starttime="20230528 01:42:30.566" endtime="20230528 01:42:33.870"/>
+</kw>
+<kw name="click" library="utils">
+<arg>id=sobe_d_b_2_3</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230528 01:42:33.871" endtime="20230528 01:42:33.879"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 01:42:33.879" level="INFO">Clicking element 'id=sobe_d_b_2_3'.</msg>
+<status status="PASS" starttime="20230528 01:42:33.879" endtime="20230528 01:42:38.605"/>
+</kw>
+<status status="PASS" starttime="20230528 01:42:33.870" endtime="20230528 01:42:38.606"/>
+</kw>
+<kw name="click" library="utils">
+<arg>${firstProduct}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230528 01:42:38.606" endtime="20230528 01:42:38.636"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 01:42:38.637" level="INFO">Clicking element 'xpath=//div[@cel_widget_id='MAIN-SEARCH_RESULTS-1']'.</msg>
+<status status="PASS" starttime="20230528 01:42:38.636" endtime="20230528 01:42:43.065"/>
+</kw>
+<status status="PASS" starttime="20230528 01:42:38.606" endtime="20230528 01:42:43.065"/>
+</kw>
+<kw name="click" library="utils">
+<arg>${addCart}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230528 01:42:43.066" endtime="20230528 01:42:43.076"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 01:42:43.077" level="INFO">Clicking element 'id=add-to-cart-button'.</msg>
+<status status="PASS" starttime="20230528 01:42:43.076" endtime="20230528 01:42:46.888"/>
+</kw>
+<status status="PASS" starttime="20230528 01:42:43.065" endtime="20230528 01:42:46.888"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Sepete Eklendi</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230528 01:42:46.888" endtime="20230528 01:42:46.939"/>
+</kw>
+<status status="PASS" starttime="20230528 01:42:30.565" endtime="20230528 01:42:46.940"/>
+</kw>
+<kw name="Check Basket" library="amazonCase">
+<kw name="click" library="utils">
+<arg>id=nav-cart-count</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230528 01:42:46.941" endtime="20230528 01:42:46.958"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 01:42:46.959" level="INFO">Clicking element 'id=nav-cart-count'.</msg>
+<status status="PASS" starttime="20230528 01:42:46.958" endtime="20230528 01:42:58.329"/>
+</kw>
+<status status="PASS" starttime="20230528 01:42:46.940" endtime="20230528 01:42:58.329"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Ara toplam (2 ürün):</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230528 01:42:58.329" endtime="20230528 01:42:58.391"/>
+</kw>
+<status status="PASS" starttime="20230528 01:42:46.940" endtime="20230528 01:42:58.391"/>
+</kw>
+<kw name="Delete Product" library="amazonCase">
+<kw name="click" library="utils">
+<arg>${delete}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230528 01:42:58.393" endtime="20230528 01:42:58.394"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 01:42:58.394" level="INFO">Clicking element 'xpath=//input[@value='Sil']'.</msg>
+<status status="PASS" starttime="20230528 01:42:58.394" endtime="20230528 01:42:58.567"/>
+</kw>
+<status status="PASS" starttime="20230528 01:42:58.392" endtime="20230528 01:42:58.567"/>
+</kw>
+<status status="PASS" starttime="20230528 01:42:58.391" endtime="20230528 01:42:58.567"/>
+</kw>
+<kw name="Check Basket Again" library="amazonCase">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Ara toplam (1 ürün):</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230528 01:42:58.569" endtime="20230528 01:42:58.598"/>
+</kw>
+<status status="PASS" starttime="20230528 01:42:58.568" endtime="20230528 01:42:58.598"/>
+</kw>
+<status status="PASS" starttime="20230528 01:42:04.745" endtime="20230528 01:42:58.598"/>
+</kw>
+<kw name="End Web Test" library="utilsApp" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230528 01:42:58.599" endtime="20230528 01:43:00.836"/>
+</kw>
+<status status="PASS" starttime="20230528 01:42:58.599" endtime="20230528 01:43:00.836"/>
+</kw>
+<status status="PASS" starttime="20230528 01:41:49.925" endtime="20230528 01:43:00.836"/>
+</test>
+<status status="PASS" starttime="20230528 01:41:49.355" endtime="20230528 01:43:00.836"/>
+</suite>
+<status status="PASS" starttime="20230528 01:41:49.355" endtime="20230528 01:43:00.836"/>
+</suite>
+<status status="PASS" starttime="20230528 01:41:49.355" endtime="20230528 01:43:00.836"/>
+</suite>
+<status status="PASS" starttime="20230528 01:41:49.323" endtime="20230528 01:43:00.836"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Techcareertest">Techcareertest</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Resources">Techcareertest.Resources</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Test">Techcareertest.Resources.Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="amazonCaseTest">Techcareertest.Resources.Test.amazonCaseTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230528 01:41:49.355" level="ERROR">Error in file 'C:\Users\HANDE ARSLAN\PycharmProjects\techcareertest\resources\app\amazonCaseApp.robot' on line 7: Setting 'Test Setup' is not allowed in resource file.</msg>
+<msg timestamp="20230528 01:41:49.355" level="ERROR">Error in file 'C:\Users\HANDE ARSLAN\PycharmProjects\techcareertest\resources\app\amazonCaseApp.robot' on line 8: Setting 'Test Teardown' is not allowed in resource file.</msg>
+</errors>
+</robot>
