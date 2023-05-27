@@ -15,6 +15,7 @@ Daha sonra indirilen klasörde zip dosyasından çıkartılır.Bir terminal aç�
 Driverın indirildiği dosya path'i Downloads varsayalım.
 
 cd Downloads 
+
 mv chromedriver /usr/local/bin
 
 Böylece chromedriver robotframework tarafından bulunabilecektir.
