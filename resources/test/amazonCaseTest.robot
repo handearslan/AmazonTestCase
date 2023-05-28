@@ -16,6 +16,7 @@ Resource    ../app/amazonCaseApp.robot
 Check Login
    amazonCaseApp.Check Login
    amazonCaseApp.Check Add to Cart
+   [Teardown]    Log To Console    Test case tamamlandı
 
 
 
